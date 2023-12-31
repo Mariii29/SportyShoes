@@ -15,8 +15,8 @@
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light" >
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-            <img th:src="@{/images/logo.jpg}"  src="../static/images/logo.jpg" width="auto" height="40" class="d-inline-block align-top" alt=""/>
+        <a class="navbar-brand" href="#" style="color: red;margin-left: 400px;font-size: 60px;">
+            <!--<img th:src="@{/images/logo.jpg}"  src="../static/images/logo.jpg" width="auto" height="40" class="d-inline-block align-top" alt=""/>-->
             SportyShoes.com
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,10 +27,10 @@
             <ul class="navbar-nav mr-auto"></ul>
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" th:href="@{/admin}" href="#">admin-home</a>
+                    <a class="nav-link" th:href="@{/admin}" href="#">HOME</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" th:href="@{/logout}" href="#">logout</a>
+                    <a class="nav-link" th:href="@{/logout}" href="#">LOGOUT</a>
                 </li>
 
             </ul>
@@ -59,10 +59,10 @@
 
                     <tr th:each="user, iStat : ${userlist}">
                     	<th scope="row" th:text="${iStat.index + 1}">1</th>
-						<td th:text="${user.id}">Larry</td>
-						<td th:text="${user.email}">Larry</td>
-						<td th:text="${user.firstName}">Larry</td>
-						<td th:text="${user.lastName}">Larry</td>
+						<td th:text="${user.id}">N/A</td>
+						<td th:text="${user.email}">N/A</td>
+						<td th:text="${user.firstName}">N/A</td>
+						<td th:text="${user.lastName}">N/A</td>
 						
                     </tr>
                     </tbody>
